@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	파일명 혹은 패턴의 결루
+	맨앞에 %d{yyyy-MM-dd HH:mm:ss} : 날짜를 기입
+	그 뒤에 해당 레벨 %-5level
+	그 뒤에 %logger{36} 어디에서 보낸건지(이걸로 무슨 기능인지 확인 가능)
+	**파일은 여기서 끝**
+	로그 패턴은 %msg 그뒤에 메세지를 남긴다.
+ -->
+<configuration>
+<!-- <contextName>${HOSTNAME}</contextName> -->
+	<!-- <turboFilter class="ch.qos.logback.classic.turbo.MarkerFilter">
+		<Marker>sample</Marker>
+		<OnMatch>DENY</OnMatch>
+	</turboFilter> -->
+	
+	 <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+	<!-- <filter class="com.ex2.SampleFilter"/> -->
+	<!-- 특정레벨만 -->
+	<!-- <filter class="ch.qos.logback.classic.filter.LevelFilter">
+		<level>INFO</level>
+		<onMatch>ACCEPT</onMatch>
+		<onMismatch>DENY</onMismatch>
+	</filter>  -->
+	<!-- 특정 레벨이하-->
+    <!-- <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter> -->
+    <!-- 조건에 맞춰서 -->
+		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+			<evaluator class="ch.qos.logback.classic.boolex.JaninoEventEvaluator">
+				<expression>return message.contains("sample");</expression>
+			</evaluator>
+			<OnMismatch>ACCECPT</OnMismatch>
+			<OnMatch>DENY</OnMatch>
+		</filter>
+<!-- 	<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+		<evaluator>
+			<matcher>
+				<Name>odd</Name>
+				filter out odd numbered statements
+				<regex>statement [13579]</regex>
+			</matcher>
+
+			<expression>odd.matches(formattedMessage)</expression>
+		</evaluator>
+		<OnMismatch>NEUTRAL</OnMismatch>
+		<OnMatch>DENY</OnMatch> 
+	</filter>-->
+	
+	
+        <encoder>
+            <Pattern> %c | %d{yyyy-MM-dd HH:mm:ss} |[%file] %-5level | %highlight(%class) | %logger[%method:%line] | %mdc{ip} | %mdc{id} | - %msg%n</Pattern>
+        </encoder>
+    </appender>
+    
+    <!-- 파일하나로 관리 -->
+    <!-- <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+	<file>log-${bySecond}.txt</file>
+	<append>true</append>
+	encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+		by default
+	<encoder>
+		<pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+	</encoder>
+</appender> -->
+    
+    <!--RollingFileAppender는 날짜기준으로 로그를 관리하고 싶을 때.  -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>mylog2.txt</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 파일이 하루에 한개씩 생성된다 -->
+            <fileNamePattern>mylog-%d{yyyy-MM-dd}.%i.txt</fileNamePattern>
+	<timeBasedFileNamingAndTriggeringPolicy
+		class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+		<!-- or whenever the file size reaches 100MB -->
+		<maxFileSize>100MB</maxFileSize>
+	</timeBasedFileNamingAndTriggeringPolicy> 	
+            <!-- maxHIstory 설정은 위 부분에 롤링 정책에 따라 적용되 된다고 보면된다.
+             위 설정데로 라면 30일이 지난 파일은 삭제가 된다.-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+ 
+        <encoder>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss} | [%marker] |[%file] %-5level | %highlight(%class) | %logger[%method:%line] | %mdc{ip} | %mdc{id} | - %msg%n</Pattern>
+        </encoder>
+    </appender>
+	
+	  <appender name="FILE-ACCESS"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logPath}/${adminLog.hostname}_aspMgr_access-%msg.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} - %msg%n
+            </Pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${adminLogPath}/${adminLog.hostname}_aspMgr_access_%d{yyyyMMddHH}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>10MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+
+    </appender>
+	
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    	
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern> %c | %d{yyyy-MM-dd HH:mm:ss} |[%file] %-5level | %highlight(%class) | %logger[%method:%line] | %mdc{ip} | %mdc{id} | - %msg%n</Pattern>
+        </layout>
+    </appender>
+
+	<!-- <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%fullRequest%n%n%fullResponse</pattern>
+		</encoder>
+	</appender> -->
+    
+    <!-- <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.access.PatternLayoutEncoder">
+            <pattern>%clientHost | %l | %user | %date | "%r" | %statusCode | %bytesSent |</pattern>
+        </layout>
+    </appender> -->
+    
+    <!-- <logger name="com.ex2.user.hello" level="INFO"
+            additivity="false">
+        <appender-ref ref="FILE-ACCESS" />
+    </logger> -->
+    
+    <logger name="Controller" level="debug"
+            additivity="false">
+        <appender-ref ref="console" />
+    </logger>
+    
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

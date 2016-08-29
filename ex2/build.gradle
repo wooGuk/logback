@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC1")
+        classpath("org.springframework:springloaded:1.2.4.RELEASE")
+    }
+}
+apply plugin: 'java'
+//apply plugin: 'idea'
+apply plugin: 'spring-boot'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+version = '1.8'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
+    compile("mysql:mysql-connector-java:5.0.8")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf:1.3.5.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-web:1.3.5.RELEASE")
+    compile("commons-collections:commons-collections:3.2")
+    compile("org.slf4j:slf4j-api:1.7.7")
+    //compile('ch.qos.logback:logback-classic:1.1.2')
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+    compile group: 'ch.qos.logback', name: 'logback-access', version: '1.1.3'
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}

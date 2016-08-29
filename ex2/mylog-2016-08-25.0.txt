@@ -1,0 +1,180 @@
+9311 [http-nio-8080-exec-1] INFO  com.ex2.user.UserController - TEST:ID =3
+9311 [http-nio-8080-exec-1] INFO  com.ex2.user.UserController - TEST:이놈은 거래를 했어요
+9311 [http-nio-8080-exec-1] INFO  com.ex2.user.UserController - TEST:단문에시지 하나를 날렸어요
+9311 [http-nio-8080-exec-1] INFO  com.ex2.user.UserController - TEST:참잘했지유
+24364 [http-nio-8080-exec-3] DEBUG com.ex2.user.UserController - SHOW:debug
+24364 [http-nio-8080-exec-3] INFO  com.ex2.user.UserController - SHOW:info
+24365 [http-nio-8080-exec-3] WARN  com.ex2.user.UserController - SHOW:warn
+24365 [http-nio-8080-exec-3] ERROR com.ex2.user.UserController - SHOW:error
+날짜                 THREAD                LEVEL   logger name                 메시지(앞에 메소드명 넣음)
+2016-08-25 10:44:11 [http-nio-8080-exec-1] DEBUG com.ex2.user.UserController - SHOW:debug
+2016-08-25 10:44:11 [http-nio-8080-exec-1] INFO  com.ex2.user.UserController - SHOW:info
+2016-08-25 10:44:11 [http-nio-8080-exec-1] WARN  com.ex2.user.UserController - SHOW:warn
+2016-08-25 10:44:11 [http-nio-8080-exec-1] ERROR com.ex2.user.UserController - SHOW:error
+2016-08-25 10:44:20 [http-nio-8080-exec-2] DEBUG com.ex2.user.UserController - SHOW:debug
+2016-08-25 10:44:20 [http-nio-8080-exec-2] INFO  com.ex2.user.UserController - SHOW:info
+2016-08-25 10:44:20 [http-nio-8080-exec-2] WARN  com.ex2.user.UserController - SHOW:warn
+2016-08-25 10:44:20 [http-nio-8080-exec-2] ERROR com.ex2.user.UserController - SHOW:error
+2016-08-25 10:44:34 [http-nio-8080-exec-4] INFO  com.ex2.user.UserController - TEST:ID =3
+2016-08-25 10:44:34 [http-nio-8080-exec-4] INFO  com.ex2.user.UserController - TEST:이놈은 거래를 했어요
+2016-08-25 10:44:34 [http-nio-8080-exec-4] INFO  com.ex2.user.UserController - TEST:단문에시지 하나를 날렸어요
+2016-08-25 10:44:34 [http-nio-8080-exec-4] INFO  com.ex2.user.UserController - TEST:참잘했지유
+2016-08-25 11:01:19 [http-nio-8080-exec-1] INFO  Controller - TEST:ID =3
+2016-08-25 11:01:19 [http-nio-8080-exec-1] INFO  Controller - TEST:이놈은 거래를 했어요
+2016-08-25 11:01:19 [http-nio-8080-exec-1] INFO  Controller - TEST:단문에시지 하나를 날렸어요
+2016-08-25 11:01:19 [http-nio-8080-exec-1] INFO  Controller - TEST:참잘했지유
+2016-08-25 11:07:44 [http-nio-8080-exec-1] INFO  Controller[show:41] - TEST:ID =3
+2016-08-25 11:07:44 [http-nio-8080-exec-1] INFO  Controller[show:45] - TEST:이놈은 거래를 했어요
+2016-08-25 11:07:44 [http-nio-8080-exec-1] INFO  Controller[show:46] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 11:07:44 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:참잘했지유
+2016-08-25 11:09:30 [http-nio-8080-exec-1] INFO  Controller[show:41] - TEST:ID =3
+2016-08-25 11:09:30 [http-nio-8080-exec-1] INFO  Controller[show:45] - TEST:이놈은 거래를 했어요
+2016-08-25 11:09:30 [http-nio-8080-exec-1] INFO  Controller[show:46] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 11:09:30 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:참잘했지유
+2016-08-25 11:09:39 [http-nio-8080-exec-2] INFO  Controller[show:41] - TEST:ID =3
+2016-08-25 11:09:39 [http-nio-8080-exec-2] INFO  Controller[show:45] - TEST:이놈은 거래를 했어요
+2016-08-25 11:09:39 [http-nio-8080-exec-2] INFO  Controller[show:46] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 11:09:39 [http-nio-8080-exec-2] INFO  Controller[show:47] - TEST:참잘했지유|2016-08-25 11:33:21 [http-nio-8080-exec-1] INFO  Controller[show:41] - TEST:ID =3|2016-08-25 11:34:17 [http-nio-8080-exec-1] INFO  Controller[show:41] - TEST:ID =3
+|2016-08-25 11:34:17 [http-nio-8080-exec-1] INFO  Controller[show:45] - TEST:이놈은 거래를 했어요
+|2016-08-25 11:34:17 [http-nio-8080-exec-1] INFO  Controller[show:46] - TEST:단문에시지 하나를 날렸어요
+|2016-08-25 11:34:17 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:참잘했지유
+remoteHost_IS_UNDEFINED 2016-08-25 11:52:11,528 2016-08-25 11:52:11 [http-nio-8080-exec-1] INFO  Controller[show:41] - TEST:ID =3
+remoteHost_IS_UNDEFINED 2016-08-25 11:52:11,530 2016-08-25 11:52:11 [http-nio-8080-exec-1] INFO  Controller[show:45] - TEST:이놈은 거래를 했어요
+remoteHost_IS_UNDEFINED 2016-08-25 11:52:11,531 2016-08-25 11:52:11 [http-nio-8080-exec-1] INFO  Controller[show:46] - TEST:단문에시지 하나를 날렸어요
+remoteHost_IS_UNDEFINED 2016-08-25 11:52:11,531 2016-08-25 11:52:11 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:참잘했지유
+2016-08-25 14:04:37 [http-nio-8080-exec-1] INFO  Controller[show:42] - TEST:ID =3
+2016-08-25 14:04:37 [http-nio-8080-exec-1] INFO  Controller[show:46] - TEST:이놈은 거래를 했어요
+2016-08-25 14:04:37 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:04:37 [http-nio-8080-exec-1] INFO  Controller[show:48] - TEST:참잘했지유
+2016-08-25 14:05:34 [http-nio-8080-exec-1] INFO  Controller[show:42] - TEST:ID =3
+2016-08-25 14:05:34 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:이놈은 거래를 했어요
+2016-08-25 14:05:34 [http-nio-8080-exec-1] INFO  Controller[show:48] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:05:34 [http-nio-8080-exec-1] INFO  Controller[show:49] - TEST:참잘했지유
+2016-08-25 14:12:36 [http-nio-8080-exec-1] INFO  Controller[show:42] - TEST:ID =3
+2016-08-25 14:12:36 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:이놈은 거래를 했어요
+2016-08-25 14:12:36 [http-nio-8080-exec-1] INFO  Controller[show:48] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:12:36 [http-nio-8080-exec-1] INFO  Controller[show:49] - TEST:참잘했지유
+2016-08-25 14:13:04 [http-nio-8080-exec-1] INFO  Controller[show:42] - TEST:ID =3
+2016-08-25 14:13:04 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:이놈은 거래를 했어요
+2016-08-25 14:13:04 [http-nio-8080-exec-1] INFO  Controller[show:48] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:13:04 [http-nio-8080-exec-1] INFO  Controller[show:49] - TEST:참잘했지유
+2016-08-25 14:13:33 [http-nio-8080-exec-1] INFO  Controller[show:42] - TEST:ID =3
+2016-08-25 14:13:33 [http-nio-8080-exec-1] INFO  Controller[show:47] - TEST:이놈은 거래를 했어요
+2016-08-25 14:13:33 [http-nio-8080-exec-1] INFO  Controller[show:48] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:13:33 [http-nio-8080-exec-1] INFO  Controller[show:49] - TEST:참잘했지유
+2016-08-25 14:23:01 [http-nio-8080-exec-1] INFO  Controller[show:50] - TEST:ID =3
+2016-08-25 14:23:01 [http-nio-8080-exec-1] INFO  Controller[show:55] - TEST:이놈은 거래를 했어요
+2016-08-25 14:23:01 [http-nio-8080-exec-1] INFO  Controller[show:56] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:23:01 [http-nio-8080-exec-1] INFO  Controller[show:57] - TEST:참잘했지유
+2016-08-25 14:24:09 [http-nio-8080-exec-3] INFO  Controller[show:50] - TEST:ID =3
+2016-08-25 14:24:09 [http-nio-8080-exec-3] INFO  Controller[show:55] - TEST:이놈은 거래를 했어요
+2016-08-25 14:24:09 [http-nio-8080-exec-3] INFO  Controller[show:56] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:24:09 [http-nio-8080-exec-3] INFO  Controller[show:57] - TEST:참잘했지유
+2016-08-25 14:24:17 [http-nio-8080-exec-4] INFO  Controller[show:50] - TEST:ID =3
+2016-08-25 14:24:17 [http-nio-8080-exec-4] INFO  Controller[show:55] - TEST:이놈은 거래를 했어요
+2016-08-25 14:24:17 [http-nio-8080-exec-4] INFO  Controller[show:56] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:24:17 [http-nio-8080-exec-4] INFO  Controller[show:57] - TEST:참잘했지유
+2016-08-25 14:50:45 [http-nio-8080-exec-1] INFO  Controller[show:56] - TEST:ID =3
+2016-08-25 14:50:45 [http-nio-8080-exec-1] INFO  Controller[show:61] - TEST:이놈은 거래를 했어요
+2016-08-25 14:50:45 [http-nio-8080-exec-1] INFO  Controller[show:62] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:50:45 [http-nio-8080-exec-1] INFO  Controller[show:63] - TEST:참잘했지유
+2016-08-25 14:51:52 [http-nio-8080-exec-1] INFO  Controller[show:56] - TEST:ID =3
+2016-08-25 14:51:52 [http-nio-8080-exec-1] INFO  Controller[show:61] - TEST:이놈은 거래를 했어요
+2016-08-25 14:51:52 [http-nio-8080-exec-1] INFO  Controller[show:62] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:51:52 [http-nio-8080-exec-1] INFO  Controller[show:63] - TEST:참잘했지유
+2016-08-25 14:54:16 [http-nio-8080-exec-1] INFO  Controller[show:56] - TEST:ID =3
+2016-08-25 14:54:16 [http-nio-8080-exec-1] INFO  Controller[show:61] - TEST:이놈은 거래를 했어요
+2016-08-25 14:54:16 [http-nio-8080-exec-1] INFO  Controller[show:62] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:54:16 [http-nio-8080-exec-1] INFO  Controller[show:63] - TEST:참잘했지유
+2016-08-25 14:54:42 [http-nio-8080-exec-4] INFO  Controller[show:56] - TEST:ID =3
+2016-08-25 14:54:42 [http-nio-8080-exec-4] INFO  Controller[show:61] - TEST:이놈은 거래를 했어요
+2016-08-25 14:54:42 [http-nio-8080-exec-4] INFO  Controller[show:62] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 14:54:42 [http-nio-8080-exec-4] INFO  Controller[show:63] - TEST:참잘했지유
+2016-08-25 15:03:36 [http-nio-8080-exec-1] INFO  Controller[show:53] - TEST:ID =3
+2016-08-25 15:03:36 [http-nio-8080-exec-1] INFO  Controller[show:58] - TEST:이놈은 거래를 했어요
+2016-08-25 15:03:36 [http-nio-8080-exec-1] INFO  Controller[show:59] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:03:36 [http-nio-8080-exec-1] INFO  Controller[show:60] - TEST:참잘했지유
+2016-08-25 15:05:54 [http-nio-8080-exec-1] INFO  Controller[show:53] - TEST:ID =3
+2016-08-25 15:05:54 [http-nio-8080-exec-1] INFO  Controller[show:58] - TEST:이놈은 거래를 했어요
+2016-08-25 15:05:54 [http-nio-8080-exec-1] INFO  Controller[show:59] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:05:54 [http-nio-8080-exec-1] INFO  Controller[show:60] - TEST:참잘했지유
+2016-08-25 15:07:03 [http-nio-8080-exec-1] INFO  Controller[show:53] - TEST:ID =3
+2016-08-25 15:07:03 [http-nio-8080-exec-1] INFO  Controller[show:58] - TEST:이놈은 거래를 했어요
+2016-08-25 15:07:03 [http-nio-8080-exec-1] INFO  Controller[show:59] - TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:07:03 [http-nio-8080-exec-1] INFO  Controller[show:60] - TEST:참잘했지유
+2016-08-25 15:07:56 [http-nio-8080-exec-1] INFO  Controller[show:53] Controller- TEST:ID =3
+2016-08-25 15:07:56 [http-nio-8080-exec-1] INFO  Controller[show:58] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:07:56 [http-nio-8080-exec-1] INFO  Controller[show:59] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:07:56 [http-nio-8080-exec-1] INFO  Controller[show:60] Controller- TEST:참잘했지유
+2016-08-25 15:09:58 [http-nio-8080-exec-1] INFO  Controller[show:53] Controller- TEST:ID =3
+2016-08-25 15:09:58 [http-nio-8080-exec-1] INFO  Controller[show:58] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:09:58 [http-nio-8080-exec-1] INFO  Controller[show:59] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:09:58 [http-nio-8080-exec-1] INFO  Controller[show:60] Controller- TEST:참잘했지유
+2016-08-25 15:11:07 [http-nio-8080-exec-1] INFO  Controller[show:55] Controller- TEST:ID =3
+2016-08-25 15:11:07 [http-nio-8080-exec-1] INFO  Controller[show:60] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:11:07 [http-nio-8080-exec-1] INFO  Controller[show:61] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:11:07 [http-nio-8080-exec-1] INFO  Controller[show:62] Controller- TEST:참잘했지유
+2016-08-25 15:13:00 [http-nio-8080-exec-1] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:13:00 [http-nio-8080-exec-1] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:13:00 [http-nio-8080-exec-1] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:13:00 [http-nio-8080-exec-1] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:14:07 [http-nio-8080-exec-1] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:14:07 [http-nio-8080-exec-1] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:14:07 [http-nio-8080-exec-1] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:14:07 [http-nio-8080-exec-1] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:06 [http-nio-8080-exec-4] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:06 [http-nio-8080-exec-4] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:06 [http-nio-8080-exec-4] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:06 [http-nio-8080-exec-4] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:14 [http-nio-8080-exec-5] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:14 [http-nio-8080-exec-5] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:14 [http-nio-8080-exec-5] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:14 [http-nio-8080-exec-5] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:15 [http-nio-8080-exec-6] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:15 [http-nio-8080-exec-6] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:15 [http-nio-8080-exec-6] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:15 [http-nio-8080-exec-6] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:17 [http-nio-8080-exec-7] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:17 [http-nio-8080-exec-7] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:17 [http-nio-8080-exec-7] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:17 [http-nio-8080-exec-7] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:19 [http-nio-8080-exec-8] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:19 [http-nio-8080-exec-8] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:19 [http-nio-8080-exec-8] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:19 [http-nio-8080-exec-8] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:21 [http-nio-8080-exec-9] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:21 [http-nio-8080-exec-9] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:21 [http-nio-8080-exec-9] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:21 [http-nio-8080-exec-9] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:33 [http-nio-8080-exec-10] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:33 [http-nio-8080-exec-10] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:33 [http-nio-8080-exec-10] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:33 [http-nio-8080-exec-10] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:33 [http-nio-8080-exec-1] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:33 [http-nio-8080-exec-1] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:33 [http-nio-8080-exec-1] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:33 [http-nio-8080-exec-1] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:34 [http-nio-8080-exec-3] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:34 [http-nio-8080-exec-3] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:34 [http-nio-8080-exec-3] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:34 [http-nio-8080-exec-3] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:21:34 [http-nio-8080-exec-2] INFO  Controller[show:56] Controller- TEST:ID =3
+2016-08-25 15:21:34 [http-nio-8080-exec-2] INFO  Controller[show:61] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:21:34 [http-nio-8080-exec-2] INFO  Controller[show:62] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:21:34 [http-nio-8080-exec-2] INFO  Controller[show:63] Controller- TEST:참잘했지유
+2016-08-25 15:27:40 [http-nio-8080-exec-1] INFO  Controller[show:59] Controller- TEST:ID =3
+2016-08-25 15:27:40 [http-nio-8080-exec-1] INFO  Controller[show:64] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:27:40 [http-nio-8080-exec-1] INFO  Controller[show:65] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:27:40 [http-nio-8080-exec-1] INFO  Controller[show:66] Controller- TEST:참잘했지유
+2016-08-25 15:28:01 [http-nio-8080-exec-4] DEBUG Controller[hello:37] Controller- SHOW:debug
+2016-08-25 15:28:01 [http-nio-8080-exec-4] INFO  Controller[hello:38] Controller- SHOW:info
+2016-08-25 15:28:01 [http-nio-8080-exec-4] WARN  Controller[hello:39] Controller- SHOW:warn
+2016-08-25 15:28:01 [http-nio-8080-exec-4] ERROR Controller[hello:40] Controller- SHOW:error
+2016-08-25 15:31:05 [http-nio-8080-exec-1] DEBUG Controller[hello:44] Controller- SHOW:debug
+2016-08-25 15:31:05 [http-nio-8080-exec-1] INFO  Controller[hello:45] Controller- SHOW:info
+2016-08-25 15:31:05 [http-nio-8080-exec-1] WARN  Controller[hello:46] Controller- SHOW:warn
+2016-08-25 15:31:05 [http-nio-8080-exec-1] ERROR Controller[hello:47] Controller- SHOW:error
+2016-08-25 15:31:28 [http-nio-8080-exec-6] INFO  Controller[show:59] Controller- TEST:ID =3
+2016-08-25 15:31:28 [http-nio-8080-exec-6] INFO  Controller[show:64] Controller- TEST:이놈은 거래를 했어요
+2016-08-25 15:31:28 [http-nio-8080-exec-6] INFO  Controller[show:65] Controller- TEST:단문에시지 하나를 날렸어요
+2016-08-25 15:31:28 [http-nio-8080-exec-6] INFO  Controller[show:66] Controller- TEST:참잘했지유

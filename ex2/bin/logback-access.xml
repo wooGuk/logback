@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <!-- always a good activate OnConsoleStatusListener -->
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" /> 
+ 
+  <!-- <filter class="ch.qos.logback.access.filter.CountingFilter">
+    <name>countingFilter</name>
+  </filter>  -->
+ 
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+  	<!-- <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+      <evaluator class="ch.qos.logback.access.boolex.JaninoEventEvaluator">
+        <expression>event.getStatusCode() == 404</expression>
+      </evaluator>
+      <onMismatch>ACCEPT</onMismatch>
+    </filter> -->
+   <!--  <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+      <evaluator class="ch.qos.logback.access.boolex.GEventEvaluator" name="Eval404">
+        <expression>
+         (event.getStatusCode() == 404)
+           &amp;&amp;  ampersand characters need to be escaped
+         !(event.getRequestURI().contains(".css"))
+        </expression>
+      </evaluator>
+      <onMismatch>ACCEPT</onMismatch>
+    </filter> -->
+    <encoder>
+      <pattern>%h %l %u %user %date "%r" %s %b</pattern>
+    </encoder>
+  </appender>
+ 
+  <appender-ref ref="STDOUT" />
+</configuration>
